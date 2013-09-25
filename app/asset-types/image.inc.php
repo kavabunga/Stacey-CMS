@@ -42,6 +42,9 @@ Class Image extends Asset {
       # @description
       if(isset($iptc["2#120"][0])) 
         $this->data['@description'] = $iptc["2#120"][0];
+      # @ru_description
+      if(isset($iptc["2#040"][0])) 
+        $this->data['@ru_description'] = $iptc["2#040"][0];
       # @keywords
       if(isset($iptc["2#025"][0])) 
         $this->data['@keywords'] = $iptc["2#025"][0];
