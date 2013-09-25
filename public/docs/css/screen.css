@@ -17,6 +17,11 @@ a { text-decoration: none; }
 p#project-count, p#gallery-count { text-align: right; }
 p#gallery-count span { letter-spacing: 0.08em; }
 
+/* Language Switcher */
+
+.lang_ru { display: none; }
+#languager .lang_ru { display: inline; }
+
 /* Layout */
 
 body { padding: 10px 0px 40px; text-align: center; }
@@ -51,6 +56,9 @@ ul#navigation ol { display: none; margin: 0px; padding: 4px 0px 4px 25px; }
 ul.projects li { float: left; padding: 0px 0px 8px; }
 
 p#footer { margin: 0px 0px 0px 260px; display: inline; line-height: 1.4; }
+div#languager { margin: 30px 0px 0px 0px; }
+div#languager ul { list-style: none; padding: 0px 0px 0px 0px; margin: 0px; }
+div#languager ul li { margin: 0px 0px 0px; }
 
 p.date { text-align: right; padding: 14px 20px 0px 0px; }
 div.description p { clear: both; }
