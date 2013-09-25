@@ -1,8 +1,11 @@
 foreach $images do
-  <div class="image">
-    <img src="@url" alt="@title" width="@width" height="@height">
+	<div class="image">
+		<img src="@url" alt="@title" width="@width" height="@height">
     if @description do
-      <em>@description</em>
+      <br><em><span class="lang_en" lang="en">@description</span></em>
     endif
-  </div>
+    if @ru_description do
+      <em><span class="lang_ru" lang="ru">@ru_description</span></em>
+    endif
+	</div>
 endforeach

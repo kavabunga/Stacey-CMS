@@ -1,8 +1,15 @@
-<ul id="navigation" class="col two">
-  foreach $root do
-    <li>
-      <a href="@url">@title</a>
-      :children
-    </li>
+<div id="navigation" class="col three">
+<ul>
+foreach $root do
+  <li><em><span class="lang_en" lang="en">@title</span><span class="lang_ru" lang="ru">@ru_title</span></a></em></li>
+  foreach $children do
+  <li>
+  	<a href="@url"><span class="lang_en" lang="en">@title</span><span class="lang_ru" lang="ru">@ru_title</span></a></a>
+  </li>
   endforeach
+endforeach
 </ul>
+<div id="languager">
+				<ul><li><a href="#" class="lang_en">En</a> / <a href="#" class="lang_ru">Ru</a></li></ul>
+			</div>
+</div>
